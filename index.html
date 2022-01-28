@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Sarabun:wght@100;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bin2Dec</title>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="converter">
+            <div class="title">Binary to Decimal Converter</div>
+            <div class="input">
+                <input maxlength="8" onkeypress="return (event.charCode >= 48 && event.charCode <= 49)" class="input-text" type="text" name="num-binario" id="num-binario" placeholder="Enter binary number" autofocus>
+            </div>
+            <div class="btn">
+                <button id="btn-convert">Converter</button>
+            </div>
+        </section>
+        <section class="result">
+            <div class="show"></div>
+        </section>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
